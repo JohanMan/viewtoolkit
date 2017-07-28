@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RefreshListView">
+        <attr name="refresh_pull_icon" format="reference" />
+        <attr name="refresh_pull_tip" format="string|reference" />
+        <attr name="refresh_pull_release_refresh_tip" format="string|reference" />
+        <attr name="refresh_pull_refreshing_tip" format="string|reference" />
+        <attr name="refresh_load_icon" format="reference" />
+        <attr name="refresh_load_tip" format="string|reference" />
+        <attr name="refresh_load_release_refresh_tip" format="string|reference" />
+        <attr name="refresh_load_refreshing_tip" format="string|reference" />
+    </declare-styleable>
+
+</resources>

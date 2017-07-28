@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:refresh_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johan.viewtoolkit.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#fff"
+        />
+
+    <com.johan.library.viewtoolkit.refreshlistview.RefreshListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1px"
+        android:divider="#cccccc"
+        refresh_view:refresh_pull_icon="@drawable/my_refresh_icon"
+        refresh_view:refresh_pull_tip="下拉刷新哦"
+        refresh_view:refresh_pull_release_refresh_tip="松手刷新哦"
+        refresh_view:refresh_pull_refreshing_tip="正在刷新哈"
+        />
+
+</LinearLayout>
