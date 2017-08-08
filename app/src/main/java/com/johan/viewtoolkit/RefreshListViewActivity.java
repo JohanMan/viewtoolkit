@@ -3,13 +3,10 @@ package com.johan.viewtoolkit;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.johan.library.viewtoolkit.refreshlistview.RefreshListView;
@@ -17,7 +14,7 @@ import com.johan.library.viewtoolkit.refreshlistview.RefreshListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class RefreshListViewActivity extends AppCompatActivity {
 
     private List<String> dataList = new ArrayList<>();
 
@@ -25,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_refresh_list_view);
 
         for (int i = 0; i < 20; i++) {
             dataList.add("Item Data " + i);
@@ -79,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            TextView textView = new TextView(MainActivity.this);
+            TextView textView = new TextView(RefreshListViewActivity.this);
             textView.setText(dataList.get(position));
             textView.setTextColor(Color.GRAY);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);

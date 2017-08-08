@@ -11,5 +11,10 @@
         <attr name="refresh_load_release_refresh_tip" format="string|reference" />
         <attr name="refresh_load_refreshing_tip" format="string|reference" />
     </declare-styleable>
+    
+    <declare-styleable name="FlowLayout">
+        <attr name="vertical_space" format="dimension|reference" />
+        <attr name="horizontal_space" format="dimension|reference" />
+    </declare-styleable>
 
 </resources>

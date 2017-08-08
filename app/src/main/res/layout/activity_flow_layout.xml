@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flow_layout="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9c9c9c">
+
+    <com.johan.library.viewtoolkit.flowlayout.FlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        flow_layout:horizontal_space="10dp"
+        flow_layout:vertical_space="10dp"
+        android:background="@android:color/white"
+        />
+
+    <com.johan.library.viewtoolkit.flowlayout.FlowLayout
+        android:id="@+id/flow_layout2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        flow_layout:horizontal_space="10dp"
+        flow_layout:vertical_space="10dp"
+        android:background="@android:color/white"
+        />
+
+</LinearLayout>
